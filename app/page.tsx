@@ -23,16 +23,19 @@ const sampleStats = [
     id: "1",
     number: "12+",
     label: "Anos de Experiência",
+    accentImg: "/flavia2.jpg",
   },
   {
     id: "2",
     number: "100+",
     label: "Alunos",
+    accentImg: "/flavia.jpg",
   },
   {
     id: "3",
     number: "5+",
     label: "MÉTODOS EM 1 CURSO",
+    accentImg: "/flavia3.jpg",
   },
 ]
 export default function Home() {

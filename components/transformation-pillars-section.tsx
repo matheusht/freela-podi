@@ -15,7 +15,7 @@ export function TransformationPillarsSection() {
           <div className="mb-8 sm:mb-10 md:mb-12">
             <div className="w-12 sm:w-16 h-1 bg-[#79450b] mx-auto mb-4 sm:mb-6"></div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#79450b] mb-4 sm:mb-6 px-2">
-              O PoDI foi feito para quem tem pouco tempo
+              O PoDI foi feito pra você que quer conquistar liberdade e tempo pra viver.
             </h2>
             <p className="text-base sm:text-lg text-[#8c745c] leading-relaxed max-w-3xl mx-auto px-2">
               Aulas curtas, diretas ao ponto, que você assiste pelo celular.<br className="hidden sm:block" />

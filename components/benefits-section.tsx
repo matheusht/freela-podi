@@ -13,7 +13,6 @@ const benefits = [
     icon: "🏢",
     title: "Trabalhe com Grandes Marcas",
     description: "Aprenda a trabalhar com marcas como Renner, Nike, Adidas, Casas Bahia e muito mais",
-    brands: ["renner", "nike", "adidas", "casasbahia"],
   },
   {
     icon: "🛍️",
@@ -65,19 +64,7 @@ export function BenefitsSection() {
               <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{benefit.icon}</div>
               <h3 className="font-bold text-base sm:text-lg mb-2 text-[#79450b]">{benefit.title}</h3>
               <p className="text-sm sm:text-sm text-[#8c745c] leading-relaxed mb-3">{benefit.description}</p>
-              
-              {benefit.brands && (
-                <div className="flex flex-wrap gap-2 mt-3 pt-3 border-t border-[#d0c1b1]">
-                  {benefit.brands.map((brand) => (
-                    <span
-                      key={brand}
-                      className="text-xs font-semibold px-2 py-1 bg-white rounded-full text-[#79450b] border border-[#d0c1b1]"
-                    >
-                      {brand.charAt(0).toUpperCase() + brand.slice(1)}
-                    </span>
-                  ))}
-                </div>
-              )}
+            
             </div>
           ))}
         </div>

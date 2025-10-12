@@ -66,7 +66,7 @@ export default function InboundHero({
     >
       {/* Decorative gradient blobs */}
       <div
-        className="absolute -right-32 -top-32 h-64 w-64 sm:h-96 sm:w-96 rounded-full bg-gradient-to-br from-[#79450b] to-[#8c745c] opacity-60"
+        className="absolute  -right-32 -top-32 h-64 w-64 sm:h-96 sm:w-96 rounded-full bg-gradient-to-br from-[#79450b] to-[#8c745c] opacity-60"
         aria-hidden="true"
       />
       <div
@@ -115,6 +115,22 @@ export default function InboundHero({
                 }}
                 className="relative z-10 flex h-64 w-56 sm:h-72 sm:w-64 flex-col items-center justify-center overflow-hidden rounded-[2rem] bg-white p-8 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
               >
+                {/* Background image with low opacity */}
+                {stats[currentIndex].accentImg && (
+                  <motion.div
+                    className="absolute inset-0 z-0"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                  >
+                    <img
+                      src={stats[currentIndex].accentImg}
+                      alt=""
+                      className="h-full w-full object-cover opacity-70"
+                    />
+                  </motion.div>
+                )}
+
                 <motion.div
                   className="absolute -right-6 sm:-right-8 -top-6 sm:-top-8 h-24 w-24 sm:h-32 sm:w-32 rounded-full bg-gradient-to-br from-[#79450b] to-[#8c745c] opacity-90"
                   initial={{ scale: 0 }}
