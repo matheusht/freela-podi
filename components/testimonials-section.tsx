@@ -40,7 +40,7 @@ const testimonials = [
     image: "/testimonials/12.jpeg",
     alt: "Depoimento Instagram - Canteguerra",
   },
-  
+
 ]
 
 export function TestimonialsSection() {
@@ -55,9 +55,13 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#fceede]">
-            Headline
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-[#fceede]">
+            Da uma olhada no <br /> que as alunas do <br /> PoDI estão falando
           </h2>
+
+          <p className="text-lg sm:text-xl text-[#fceede]/80 mt-4">
+            Centenas de mulheres já transformaram suas vidas com o PoDI
+          </p>
         </motion.div>
 
         {/* Testimonials Masonry Gallery */}

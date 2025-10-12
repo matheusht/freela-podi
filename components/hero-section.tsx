@@ -46,15 +46,15 @@ export function HeroSection() {
 
           <div className="pt-4 sm:pt-6 px-2">
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl max-w-3xl mx-auto bg-[#fceede]/10 backdrop-blur-sm">
-              <div className="aspect-video">
-                <video
-                  src="/podi.mp4"
-                  controls
-                  className="w-full h-full object-cover"
-                  preload="metadata"
-                >
-                  Your browser does not support the video tag.
-                </video>
+              <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
+                <iframe 
+                  src="https://player.vimeo.com/video/1126605579?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
+                  title="PoDI"
+                />
               </div>
             </div>
           </div>
