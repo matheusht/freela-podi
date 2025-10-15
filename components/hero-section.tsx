@@ -3,21 +3,21 @@ import { motion } from "framer-motion"
 
 export function HeroSection() {
   return (
-    <motion.section 
+    <motion.section
       // initial={{ opacity: 0, scale: 0.95 }}
       // animate={{ opacity: 1, scale: 1 }}
       // transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="gradient-brand min-h-screen flex items-center py-6 sm:py-12 md:py-16 lg:py-20"
+      className="gradient-brand min-h-[calc(100vh-150px)] sm:min-h-screen flex items-start justify-center py-2 pb-4 sm:py-12 md:py-16 lg:py-20"
     >
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+      <div className="container mt-5 mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 pt-8 sm:pt-0">
           <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight text-[#fceede] text-balance px-2">
             Conquiste sua <span className="font-bold">LIBERDADE FINANCEIRA</span> sem sair de casa
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#fceede]/90 leading-relaxed text-pretty max-w-3xl mx-auto px-2">
             No PoDI você vai apreender a usar o seu celular como FONTE DE RENDA 💰 <br />
-E o melhor: trabalhando da sua casa, ter mais tempo com seus filhos e SEM precisar aparecer.
+            E o melhor: trabalhando da sua casa, ter mais tempo com seus filhos e SEM precisar aparecer.
           </p>
 
           {/* Urgency Offer */}
@@ -47,13 +47,13 @@ E o melhor: trabalhando da sua casa, ter mais tempo com seus filhos e SEM precis
 
           <div className="pt-4 sm:pt-6 px-2">
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl max-w-3xl mx-auto bg-[#fceede]/10 backdrop-blur-sm">
-              <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
-                <iframe 
-                  src="https://player.vimeo.com/video/1126605579?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1" 
-                  frameBorder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
+              <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1126605579?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
                   title="PoDI"
                 />
               </div>
