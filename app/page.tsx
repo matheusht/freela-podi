@@ -21,20 +21,17 @@ import { QuestionsSection } from "@/components/questions-section"
 const sampleStats = [
   {
     id: "1",
-    number: "12+",
-    label: "Anos de Experiência",
+    text: "Assista a Qualquer Hora",
     accentImg: "/flavia2.jpg",
   },
   {
     id: "2",
-    number: "100+",
-    label: "Alunos",
+    text: "Acesso Vitalício",
     accentImg: "/flavia.jpg",
   },
   {
     id: "3",
-    number: "5+",
-    label: "MÉTODOS EM 1 CURSO",
+    text: "Métodos Validados",
     accentImg: "/flavia3.jpg",
   },
 ]

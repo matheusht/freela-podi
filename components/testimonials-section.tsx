@@ -29,7 +29,7 @@ const testimonials = [
     alt: "Depoimento Instagram - Rosangela Hayden",
   },
   {
-    image: "/testimonials/7.png",
+    image: "/testimonials/13.jpeg",
     alt: "Depoimento Instagram - Canteguerra",
   },
   {
@@ -37,7 +37,11 @@ const testimonials = [
     alt: "Depoimento Instagram - Canteguerra",
   },
   {
-    image: "/testimonials/12.jpeg",
+    image: "/testimonials/14.jpeg",
+    alt: "Depoimento Instagram - Canteguerra",
+  },
+  {
+    image: "/testimonials/8.png",
     alt: "Depoimento Instagram - Canteguerra",
   },
 

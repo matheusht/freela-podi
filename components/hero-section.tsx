@@ -7,7 +7,7 @@ export function HeroSection() {
       // initial={{ opacity: 0, scale: 0.95 }}
       // animate={{ opacity: 1, scale: 1 }}
       // transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="gradient-brand min-h-screen flex items-center py-12 sm:py-16 md:py-20 lg:py-24"
+      className="gradient-brand min-h-screen flex items-center py-6 sm:py-12 md:py-16 lg:py-20"
     >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
@@ -16,7 +16,8 @@ export function HeroSection() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#fceede]/90 leading-relaxed text-pretty max-w-3xl mx-auto px-2">
-            No PoDI você vai aprender a ter sua renda extra, sem precisar aparecer. Ter mais tempo com seus filhos, ser dona dos seus horários, renda extra e muito mais.
+            No PoDI você vai apreender a usar o seu celular como FONTE DE RENDA 💰 <br />
+E o melhor: trabalhando da sua casa, ter mais tempo com seus filhos e SEM precisar aparecer.
           </p>
 
           {/* Urgency Offer */}

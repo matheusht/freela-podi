@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button"
 
 const includedItems = [
-  { name: "Mentorias ao vivo toda semana para explicar menor o conteúdo, trazer estratégias novas e tirar dúvidas", originalPrice: "R$ 999" },
-  { name: "Acesso ao grupo VIP que será enviado dicas extras, motivações, e as aulas gravadas para quando não conseguir assistir ao vivo.", originalPrice: "R$ 297" },
-  { name: "Acesso ao WhatsApp pessoal da mentira para tirar dúvidas no privado", originalPrice: "R$ 599" },
+  { name: "Aulas gravadas para assistir a qualquer hora com acesso VITALÍCIO", originalPrice: "R$ 497" },
+  { name: "Mentorias AO VIVO toda semana para trazer atualizações e tirar dúvidas", originalPrice: "R$ 997" },
+  { name: "Acesso ao GRUPO VIP com dicas extras", originalPrice: "R$ 297" },
+  { name: "Acesso ao WhatsApp pessoal da mentora para tirar dúvidas à qualquer momento", originalPrice: "R$ 197" }
 ]
 
 export function PricingSection() {
@@ -18,7 +19,7 @@ export function PricingSection() {
             <div className="text-[#fceede]">
               {/* NOVO TÍTULO: ESCASSEZ E CONTRATE DE PREÇO */}
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-balance">
-                Por apenas R$197. Esse é o preço promocional de lançamento, aproveite!
+                Por apenas 12x R$30,72. POR TEMPO LIMITADO.
               </h2>
 
               <div className="mb-6 sm:mb-8">
@@ -47,9 +48,8 @@ export function PricingSection() {
               </div>
 
               <div className="border-t border-[#fceede]/20 pt-3 sm:pt-4 mb-3 sm:mb-4">
-                <div className="flex justify-between items-center text-base sm:text-lg md:text-xl font-semibold gap-2">
-                  <span>Seu investimento no PoDI:</span>
-                  <span className="text-[#fceede] whitespace-nowrap">R$ 197/ano</span>
+                <div className="flex justify-center items-center text-base sm:text-lg md:text-xl font-semibold gap-2">
+                  <span className="text-[#fceede] whitespace-nowrap">De <span className="line-through">1.997,00</span> <b>por</b> R$ 297</span>
                 </div>
               </div>
 
@@ -60,7 +60,7 @@ export function PricingSection() {
               <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl max-w-sm w-full">
                 <div className="flex items-center justify-between mb-4 sm:mb-6 gap-2">
                   <span className="bg-[#fceede] text-[#79450b] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
-                    Plano Anual
+                    Plano Vitalício
                   </span>
                   <div className="text-[#79450b] font-bold text-base sm:text-lg">PoDI</div>
                 </div>
@@ -68,10 +68,10 @@ export function PricingSection() {
                 <div className="text-center mb-4 sm:mb-6">
                   <div className="flex items-baseline justify-center gap-1 mb-2">
                     <span className="text-xs sm:text-sm text-[#8c745c]">12x de</span>
-                    <span className="text-4xl sm:text-5xl font-bold text-[#79450b]">R$20</span>
-                    <span className="text-base sm:text-lg text-[#8c745c]">,55</span>
+                    <span className="text-4xl sm:text-5xl font-bold text-[#79450b]">R$30</span>
+                    <span className="text-base sm:text-lg text-[#8c745c]">,72</span>
                   </div>
-                  <p className="text-[#8c745c] mb-3 sm:mb-4 text-sm sm:text-base">ou R$197,00 à vista</p>
+                  <p className="text-[#8c745c] mb-3 sm:mb-4 text-sm sm:text-base">ou R$297,00 à vista</p>
                   <p className="text-xs sm:text-sm text-[#8c745c]">
                     Menos de R$ 1 por dia para<br />
                     acessar toda a plataforma

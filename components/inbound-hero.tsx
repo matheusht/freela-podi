@@ -9,8 +9,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 export interface StatCard {
   id: string
-  number: string
-  label?: string
+  text: string
   accentImg?: string
 }
 
@@ -139,25 +138,15 @@ export default function InboundHero({
                   aria-hidden="true"
                 />
 
-                <div className="relative z-10 mt-6 sm:mt-8 text-center">
+                <div className="relative z-10 mt-6 sm:mt-8 text-center flex items-center justify-center h-full">
                   <motion.div
-                    className="mb-2 sm:mb-3 font-sans text-4xl sm:text-5xl font-bold leading-none tracking-tight text-[#79450b]"
+                    className="font-sans text-lg sm:text-xl font-bold leading-tight tracking-tight text-[#79450b] px-4"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
                   >
-                    {stats[currentIndex].number}
+                    {stats[currentIndex].text}
                   </motion.div>
-                  {stats[currentIndex].label && (
-                    <motion.div
-                      className="text-xs font-bold uppercase tracking-widest text-[#79450b]"
-                      initial={{ y: 10, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.4, duration: 0.5 }}
-                    >
-                      {stats[currentIndex].label}
-                    </motion.div>
-                  )}
                 </div>
               </motion.div>
             </AnimatePresence>
