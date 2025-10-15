@@ -9,7 +9,7 @@ const includedItems = [
 
 export function PricingSection() {
   return (
-    <section className="bg-gradient-to-br from-[#8a715b] via-[#6d3a0f] to-[#79450b] py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
+    <section className="bg-[#6d3a0f] bg-gradient-to-br from-[#8a715b] via-[#6d3a0f] to-[#79450b] py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
       {/* Decorative gradient overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-tr from-[#5a3208]/30 via-transparent to-[#8a715b]/20 pointer-events-none" />
       <div className="relative z-10">
@@ -18,12 +18,12 @@ export function PricingSection() {
             {/* Left Content */}
             <div className="text-[#fceede]">
               {/* NOVO TÍTULO: ESCASSEZ E CONTRATE DE PREÇO */}
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-balance">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-balance text-white drop-shadow-lg">
                 Por apenas 12x R$30,72. POR TEMPO LIMITADO.
               </h2>
 
               <div className="mb-6 sm:mb-8">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6">e TEM MAIS… entrando HOJE você ainda irá receber:</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 text-white drop-shadow-md">e TEM MAIS… entrando HOJE você ainda irá receber:</h3>
                 <div className="space-y-2 sm:space-y-3">
                   {includedItems.map((item, index) => (
                     <div key={index} className="flex justify-between items-start gap-3 sm:gap-4">
@@ -39,17 +39,17 @@ export function PricingSection() {
                             clipRule="evenodd"
                           />
                         </svg>
-                        <span className="text-sm sm:text-base leading-relaxed text-[#fceede]/90">{item.name}</span>
+                        <span className="text-sm sm:text-base leading-relaxed text-white/95 drop-shadow-sm">{item.name}</span>
                       </div>
-                      <span className="text-[#fceede]/70 line-through whitespace-nowrap text-sm sm:text-base flex-shrink-0">{item.originalPrice}</span>
+                      <span className="text-white/75 line-through whitespace-nowrap text-sm sm:text-base flex-shrink-0 drop-shadow-sm">{item.originalPrice}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="border-t border-[#fceede]/20 pt-3 sm:pt-4 mb-3 sm:mb-4">
+              <div className="border-t border-white/20 pt-3 sm:pt-4 mb-3 sm:mb-4">
                 <div className="flex justify-center items-center text-base sm:text-lg md:text-xl font-semibold gap-2">
-                  <span className="text-[#fceede] whitespace-nowrap">De <span className="line-through">1.997,00</span> <b>por</b> R$ 297</span>
+                  <span className="text-white whitespace-nowrap drop-shadow-md">De <span className="line-through">1.997,00</span> <b>por</b> R$ 297</span>
                 </div>
               </div>
 
