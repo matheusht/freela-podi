@@ -140,7 +140,7 @@ export default function InboundHero({
 
                 <div className="relative z-10 mt-6 sm:mt-8 text-center flex items-center justify-center h-full">
                   <motion.div
-                    className="font-sans text-lg sm:text-xl font-bold leading-tight tracking-tight text-[#79450b] px-4"
+                    className="font-sans text-2xl sm:text-3xl font-bold leading-tight tracking-tight text-[#79450b] px-4"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
