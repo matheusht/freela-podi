@@ -38,7 +38,7 @@ export function HeroSection() {
               className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 py-5 sm:py-6 md:py-8 bg-[#fceede] text-[#79450b] hover:bg-[#d0c1b1] font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all"
               asChild
             >
-              <a href="https://pay.kiwify.com.br/G7NBrKH" target="_blank" rel="noopener noreferrer">
+              <a href="https://pay.kiwify.com.br/gEfjQAF" target="_blank" rel="noopener noreferrer">
                 <span className="hidden sm:inline">🚀 Quero minha vaga agora para começar a ganhar dinheiro!</span>
                 <span className="sm:hidden">🚀 Quero Minha Vaga!</span>
               </a>

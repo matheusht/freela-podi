@@ -26,7 +26,7 @@ export function PainPointsSection() {
             className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-7 bg-[#79450b] hover:bg-[#8c745c] text-[#fceede] font-semibold rounded-full"
             asChild
           >
-            <a href="https://pay.kiwify.com.br/G7NBrKH" target="_blank" rel="noopener noreferrer">
+            <a href="https://pay.kiwify.com.br/gEfjQAF" target="_blank" rel="noopener noreferrer">
               Quero assinar
             </a>
           </Button>

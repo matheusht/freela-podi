@@ -83,7 +83,7 @@ export function PricingSection() {
                   className="w-full text-base sm:text-lg py-5 sm:py-6 bg-[#79450b] hover:bg-[#8c745c] text-[#fceede] font-semibold rounded-full"
                   asChild
                 >
-                  <a href="https://pay.kiwify.com.br/G7NBrKH" target="_blank" rel="noopener noreferrer">
+                  <a href="https://pay.kiwify.com.br/gEfjQAF" target="_blank" rel="noopener noreferrer">
                     GARANTIR MEU ACESSO
                   </a>
                 </Button>
