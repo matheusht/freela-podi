@@ -22,17 +22,17 @@ const sampleStats = [
   {
     id: "1",
     text: "Assista a Qualquer Hora",
-    accentImg: "/flavia2.jpg",
+    accentImg: "/flavia2compress.jpg",
   },
   {
     id: "2",
     text: "Acesso Vitalício",
-    accentImg: "/flavia.jpg",
+    accentImg: "/flavia.webp",
   },
   {
     id: "3",
     text: "Métodos Validados",
-    accentImg: "/flavia3.jpg",
+    accentImg: "/flavia3compress.jpg",
   },
 ]
 export default function Home() {
