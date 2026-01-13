@@ -58,7 +58,7 @@ export function TransformationPillarsSection() {
 
           {/* CTA Button */}
           <a
-            href="https://pay.kiwify.com.br/gEfjQAF"
+            href="https://chat.whatsapp.com/JHCCAVMthOtEjqB7RjrstS"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto bg-gradient-to-r from-[#79450b] to-[#8c745c] hover:from-[#8c745c] hover:to-[#79450b] text-[#fceede] font-bold px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 rounded-full text-sm sm:text-base md:text-lg lg:text-xl transition-all transform hover:scale-105 shadow-xl"

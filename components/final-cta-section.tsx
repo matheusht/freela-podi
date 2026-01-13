@@ -92,7 +92,7 @@ export function FinalCTASection() {
                 className="mt-8 text-center"
               >
                 <motion.a
-                  href="https://pay.kiwify.com.br/gEfjQAF"
+                  href="https://chat.whatsapp.com/JHCCAVMthOtEjqB7RjrstS"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -4 }}
@@ -181,7 +181,7 @@ export function FinalCTASection() {
 
               <div className="mt-6 sm:mt-8 text-center">
                 <a
-                  href="https://pay.kiwify.com.br/gEfjQAF"
+                  href="https://chat.whatsapp.com/JHCCAVMthOtEjqB7RjrstS"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-[#79450b] to-[#8c745c] hover:from-[#8c745c] hover:to-[#79450b] text-[#fceede] font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg transition-all transform hover:scale-105 shadow-xl"

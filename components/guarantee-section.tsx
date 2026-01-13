@@ -47,7 +47,7 @@ export function GuaranteeSection() {
                 className="mt-8 text-center"
               >
                 <motion.a
-                  href="https://pay.kiwify.com.br/gEfjQAF"
+                  href="https://chat.whatsapp.com/JHCCAVMthOtEjqB7RjrstS"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -4 }}
