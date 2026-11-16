@@ -1,66 +1,148 @@
+"use client"
+
+import Image from "next/image"
 import { Button } from "./ui/button"
-import { motion } from "framer-motion"
+import { CHECKOUT_URL } from "@/lib/constants"
+
+const highlights = [
+  "Venda aparecendo ou sem aparecer",
+  "Grave e edite pelo celular",
+  "Plano prático de 4 semanas",
+]
 
 export function HeroSection() {
   return (
-    <motion.section
-      // initial={{ opacity: 0, scale: 0.95 }}
-      // animate={{ opacity: 1, scale: 1 }}
-      // transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="gradient-brand min-h-[calc(100vh-150px)] sm:min-h-screen flex items-start justify-center py-2 pb-4 sm:py-12 md:py-16 lg:py-20"
-    >
-      <div className="container mt-5 mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 pt-8 sm:pt-0">
-          <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight text-[#fceede] text-balance px-2">
-            Conquiste sua <span className="font-bold">LIBERDADE FINANCEIRA</span> sem sair de casa
-          </h1>
+    <section className="relative overflow-hidden bg-[#090807] text-[#f8f5ee] py-12 sm:py-16 md:py-20 lg:py-24 border-b border-[#e5c365]/15">
+      {/* Ambient gold radial lighting */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(212,175,55,0.12),transparent_50%),radial-gradient(circle_at_80%_50%,rgba(212,175,55,0.14),transparent_55%)]"
+        aria-hidden="true"
+      />
 
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#fceede]/90 leading-relaxed text-pretty max-w-3xl mx-auto px-2">
-            No PoDI você vai apreender a usar o seu celular como FONTE DE RENDA 💰 <br />
-            E o melhor: trabalhando da sua casa, ter mais tempo com seus filhos e SEM precisar aparecer.
-          </p>
+      <div className="container relative z-10 mx-auto px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          {/* Left Column: Brand Lockup, Copy, Value Stack & CTA */}
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+            {/* Clean Brand Lockup */}
+            <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+              <div className="relative w-40 sm:w-48">
+                <div
+                  className="pointer-events-none absolute -inset-4 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.14)_0%,transparent_70%)] blur-lg"
+                  aria-hidden="true"
+                />
+                <Image
+                  src="/podi-plus-logo.png"
+                  alt="PoDI +"
+                  width={688}
+                  height={380}
+                  priority
+                  className="relative z-10 w-full h-auto object-contain drop-shadow-[0_4px_20px_rgba(212,175,55,0.18)]"
+                />
+              </div>
+              <span className="hidden sm:block h-6 w-px bg-white/15" aria-hidden="true" />
+              <span className="text-sm sm:text-base font-medium text-[#f8f5ee]/80">
+                Poder da Divulgação na Internet
+              </span>
+            </div>
 
-          {/* Urgency Offer */}
-          {/* <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 max-w-2xl mx-auto border border-white/20">
-            <p className="text-lg md:text-xl lg:text-2xl font-bold text-yellow-300 mb-2">
-              🔥 OFERTA ESPECIAL POR TEMPO LIMITADO!
+            {/* Main Headline */}
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-[1.12] tracking-tight text-white text-balance">
+              Aprenda a trabalhar com{" "}
+              <span className="text-[#e5c365]">Shein e Shopee</span>, gravar e editar vídeos aparecendo ou não
+            </h1>
+
+            {/* Subtitle & Tagline */}
+            <p className="text-base sm:text-lg md:text-xl text-[#f8f5ee]/80 leading-relaxed max-w-2xl text-pretty">
+              Mesmo começando do zero, sem experiência.{" "}
+              <span className="text-white font-medium">
+                Mais prático. Mais direto. Mais atualizado. Mais oportunidades para você!
+              </span>
             </p>
-            <p className="text-base md:text-lg lg:text-xl text-white">
-              De <span className="line-through text-white/70">R$297</span> por apenas{" "}
-              <span className="text-2xl md:text-3xl font-bold text-yellow-300">12x de R$19,70</span>
-            </p>
-            <p className="text-white/90 mt-2 text-sm md:text-base">ou R$197 à vista</p>
-          </div> */}
 
-          <div className="flex justify-center pt-4 sm:pt-6 px-4">
-            <Button
-              size="lg"
-              className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 py-5 sm:py-6 md:py-8 bg-[#fceede] text-[#79450b] hover:bg-[#d0c1b1] font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all"
-              asChild
-            >
-              <a href="https://chat.whatsapp.com/JHCCAVMthOtEjqB7RjrstS" target="_blank" rel="noopener noreferrer">
-                <span className="hidden sm:inline">🚀 Quero entrar no grupo agora para começar a ganhar dinheiro!</span>
-                <span className="sm:hidden">🚀 Entre no grupo!</span>
-              </a>
-            </Button>
+            {/* Scannable Highlights */}
+            <ul className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2.5 pt-1 text-sm sm:text-base text-[#f8f5ee]/90">
+              {highlights.map((item) => (
+                <li key={item} className="inline-flex items-center gap-2">
+                  <svg
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#e5c365] flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA & Price/Guarantee Anchor */}
+            <div className="w-full sm:w-auto pt-2 space-y-3">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 gradient-gold text-[#12110f] font-bold rounded-full shadow-[0_12px_36px_-4px_rgba(212,175,55,0.4)] active:scale-[0.97] [@media(hover:hover)_and_(pointer:fine)]:hover:scale-[1.02] [@media(hover:hover)_and_(pointer:fine)]:hover:opacity-95 transition-[transform,opacity,box-shadow] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)]"
+                asChild
+              >
+                <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                  QUERO COMEÇAR AGORA
+                </a>
+              </Button>
+
+              <p className="text-xs sm:text-sm text-[#f8f5ee]/65">
+                Oferta especial de lançamento: de{" "}
+                <span className="line-through text-[#f8f5ee]/45">R$ 297,00</span> por{" "}
+                <strong className="text-[#e5c365] font-semibold">R$ 197,00 à vista</strong> ou em até 12x • 7 dias de garantia
+              </p>
+            </div>
           </div>
 
-          <div className="pt-4 sm:pt-6 px-2">
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl max-w-3xl mx-auto bg-[#fceede]/10 backdrop-blur-sm">
-              <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                <iframe
-                  src="https://player.vimeo.com/video/1126605579?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=0"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                  title="PoDI"
+          {/* Right Column: Editorial Mentor & Outcome Showcase */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-md lg:max-w-none">
+              <div className="relative rounded-[2rem] overflow-hidden bg-[#141210] shadow-[0_24px_60px_rgba(0,0,0,0.65),0_0_0_1px_rgba(229,195,101,0.22)] aspect-[4/5]">
+                <Image
+                  src="/flavia-yuan-2.jpg"
+                  alt="Flávia Raíssa e Yuan Martins criando conteúdo pelo celular"
+                  width={800}
+                  height={1000}
+                  priority
+                  className="w-full h-full object-cover object-[50%_62%] scale-[1.06]"
                 />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#090807]/90 via-[#090807]/20 to-transparent"
+                  aria-hidden="true"
+                />
+
+                {/* Bottom White/Gold Card inside Portrait */}
+                <div className="absolute inset-x-4 bottom-4 sm:inset-x-5 sm:bottom-5 rounded-2xl bg-[#f8f5ee]/95 backdrop-blur-md p-4 sm:p-5 text-[#12110f] shadow-[0_12px_30px_rgba(0,0,0,0.35)]">
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <p className="font-bold text-base sm:text-lg text-[#12110f] leading-snug">
+                        Flávia Raíssa e Yuan
+                      </p>
+                      <p className="text-xs sm:text-sm text-[#5c564b] mt-0.5">
+                        +12 anos de experiência no digital
+                      </p>
+                    </div>
+                    <div className="flex-shrink-0 text-right border-l border-[#12110f]/12 pl-4">
+                      <p className="text-xs sm:text-sm font-bold text-[#12110f] leading-none">
+                        7 Módulos
+                      </p>
+                      <p className="text-xs font-semibold text-[#9a721c] mt-1 leading-none">
+                        + Suporte VIP
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   )
 }

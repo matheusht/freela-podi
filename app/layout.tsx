@@ -7,9 +7,9 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "PoDI - Poder da Divulgação na Internet | Flávia Raíssa",
+  title: "PoDI + | Poder da Divulgação na Internet — Flávia Raíssa e Yuan",
   description:
-    "Conquiste sua liberdade financeira sem precisar aparecer. Aprenda a ganhar dinheiro pela internet trabalhando de casa com a mentoria completa do PoDI.",
+    "Aprenda a trabalhar com Shein e Shopee, gravar e editar vídeos aparecendo ou não. Mesmo começando do zero, sem experiência.",
   icons: {
     icon: "/podi.ico",
   },

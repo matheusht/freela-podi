@@ -1,34 +1,35 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { motion } from "framer-motion"
 
 const faqs = [
   {
     question: "Preciso aparecer para vender?",
     answer:
-      "Definitivamente NÃO. Esse é o grande diferencial do PoDI, a maior parte das estratégias ensinadas são para quem quer vender de forma discreta, sem precisar aparecer nas redes sociais.",
+      "Não! No PoDI + você aprende tanto a vender aparecendo quanto a vender sem aparecer, descobrindo formas de divulgar produtos sem precisar mostrar o rosto.",
   },
   {
     question: "Funciona mesmo para quem nunca vendeu online?",
-    answer: "Sim, o PoDI é para iniciantes, começando absolutamente do zero. A linguagem é simples e direta, com passo a passo de cada renda e estratégias para vender.",
+    answer:
+      "Sim, o PoDI + é para iniciantes, começando absolutamente do zero, sem experiência. A linguagem é simples e direta, com um plano de ação passo a passo de quatro semanas.",
   },
   {
     question: "Eu não sei vender, vou dar conta?",
-    answer: "No PoDI eu ensino técnicas simples de persuasão, em que as vendas serão naturais, sem precisar insistir, se expor ou conversar com ninguém.",
+    answer:
+      "No PoDI + você aprende a criar conteúdos, despertar o interesse e divulgar produtos da Shopee e Shein de maneira estratégica e natural.",
   },
   {
     question: "Só ganha dinheiro com a internet quem tem seguidores?",
     answer:
-      "Essa é a maior mentira já dita. A maioria das alunas do PoDI são mulheres comuns, com poucos seguidores. Seguidores não é sinônimo de ganhos. Você só precisa de estratégia.",
+      "Essa é a maior mentira já dita. A maioria das alunas são mulheres comuns, com poucos seguidores. Seguidores não é sinônimo de ganhos — você só precisa de estratégia.",
   },
   {
     question: "E se eu não tiver tempo?",
     answer:
-      "Justamente por falta de tempo que você precisa do PoDI. O PoDI mostra estratégias que cabem na sua rotina, mesmo que você tenha pouco tempo.",
+      "O PoDI + tem aulas práticas e objetivas para você aprender no seu ritmo, de onde estiver, usando apenas o seu celular.",
   },
   {
     question: "Será que vou dar conta?",
     answer:
-      "No PoDI você não está sozinha, eu caminho junto com você. Além das aulas gravadas que você vai assistir quando puder, ainda temos encontros semanais e você terá acesso ao meu WhatsApp pessoal para tirar dúvidas quando quiser.",
+      "No PoDI + você não está sozinha: além dos 7 módulos e do plano de ação de 4 semanas, você conta com suporte pelo WhatsApp e 12 meses de acesso ao treinamento.",
   },
   {
     question: "E se eu ver que não é pra mim?",
@@ -39,17 +40,12 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <motion.section
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="bg-white py-12 sm:py-16 md:py-20 lg:py-24"
-    >
+    <section className="bg-white py-12 sm:py-16 md:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto">
-          <div className="w-12 sm:w-16 h-1 bg-[#79450b] mx-auto mb-4 sm:mb-6"></div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance text-[#79450b]">Perguntas Frequentes</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance text-[#12110f]">
+            Perguntas Frequentes
+          </h2>
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -60,15 +56,17 @@ export function FAQSection() {
                 value={`item-${index}`}
                 className="border-none rounded-xl sm:rounded-2xl overflow-hidden"
               >
-                <AccordionTrigger className="text-left text-xl sm:text-base md:text-xl font-semibold hover:no-underline text-[#fceede] py-4 px-4 sm:px-6 bg-[#83501a]">
+                <AccordionTrigger className="text-left text-lg sm:text-base md:text-xl font-semibold hover:no-underline text-[#e5c365] py-4 px-4 sm:px-6 bg-[#12110f]">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-[#79450b] leading-relaxed text-base sm:text-base bg-[#fceede] px-4 sm:px-6 py-4">{faq.answer}</AccordionContent>
+                <AccordionContent className="text-[#12110f] leading-relaxed text-base sm:text-base bg-[#f8f5ee] px-4 sm:px-6 py-4">
+                  {faq.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
       </div>
-    </motion.section>
+    </section>
   )
 }

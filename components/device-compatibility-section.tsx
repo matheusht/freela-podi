@@ -5,7 +5,6 @@ export function DeviceCompatibilitySection() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Header */}
           <div className="mb-12">
-            <div className="w-16 h-1 bg-black mx-auto mb-8"></div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
               Transforme sua vida pelo celular, desktop ou tablet
             </h2>
@@ -18,9 +17,6 @@ export function DeviceCompatibilitySection() {
 
           {/* Devices */}
           <div className="mb-8">
-            <p className="text-purple-600 font-medium mb-4 uppercase tracking-wide">
-              DISPOSITIVOS
-            </p>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
               Mobile • Desktop • Tablet
             </h3>

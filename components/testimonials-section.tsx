@@ -1,7 +1,6 @@
-'use client'
+"use client"
 
 import Image from "next/image"
-import { motion } from "framer-motion"
 
 const testimonials = [
   {
@@ -44,57 +43,35 @@ const testimonials = [
     image: "/testimonials/8.png",
     alt: "Depoimento Instagram - Canteguerra",
   },
-
 ]
 
 export function TestimonialsSection() {
   return (
-    <section className="bg-[#432818] py-12 sm:py-16 md:py-20 lg:py-24">
+    <section className="bg-[#12110f] py-14 sm:py-18 md:py-22 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6">
-        {/* Headline */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-8 sm:mb-12 md:mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-[#fceede]">
-            Da uma olhada no <br /> que as alunas do <br /> PoDI estão falando
+        <div className="text-center mb-10 sm:mb-14 max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#f8f5ee] text-balance">
+            Dá uma olhada no que as alunas do PoDI estão falando
           </h2>
 
-          <p className="text-lg sm:text-xl text-[#fceede]/80 mt-4">
+          <p className="text-base sm:text-lg md:text-xl text-[#f8f5ee]/75 mt-3">
             Centenas de mulheres já transformaram suas vidas com o PoDI
           </p>
-        </motion.div>
+        </div>
 
-        {/* Testimonials Masonry Gallery */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 max-w-7xl mx-auto"
-        >
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="mb-4 break-inside-avoid"
-            >
+            <div key={index} className="mb-4 break-inside-avoid">
               <Image
                 src={testimonial.image}
                 alt={testimonial.alt}
                 width={400}
                 height={600}
-                className="w-full h-auto rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="w-full h-auto rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
               />
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   )

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { CHECKOUT_URL } from "@/lib/constants"
 
 export function UrgencyBanner() {
   const [timeLeft, setTimeLeft] = useState({
@@ -27,18 +28,24 @@ export function UrgencyBanner() {
   }, [])
 
   return (
-    <div className="bg-[#fceede] border-b border-[#79450b]/20 py-2 sm:py-3 px-3 sm:px-4 text-center sticky top-0 z-50">
-      <p className="text-xs sm:text-sm md:text-base font-medium text-[#79450b]">
-        🔥 APROVEITE A OFERTA: De <span className="line-through">R$1997</span> por apenas{" "}
-        <span className="font-bold text-[#79450b] text-sm sm:text-base md:text-lg">R$297</span>
-        <span className="hidden sm:inline"> • </span>
-        <span className="block sm:inline mt-1 sm:mt-0">
-          <span className="font-bold bg-[#d0c1b1] px-2 py-1 rounded text-[#79450b]">
-            {String(timeLeft.hours).padStart(2, "0")}:{String(timeLeft.minutes).padStart(2, "0")}:
-            {String(timeLeft.seconds).padStart(2, "0")}
-          </span>
+    <div className="bg-[#0d0c0a]/95 backdrop-blur-md border-b border-[#e5c365]/20 py-2.5 px-3 sm:px-4 text-center sticky top-0 z-50">
+      <a
+        href={CHECKOUT_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-xs sm:text-sm md:text-base font-medium text-[#f8f5ee] active:scale-[0.97] [@media(hover:hover)_and_(pointer:fine)]:hover:opacity-90 transition-[transform,opacity] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)]"
+      >
+        <span>
+          <strong className="font-semibold text-[#e5c365]">Oferta Especial de Lançamento:</strong> De{" "}
+          <span className="line-through text-[#f8f5ee]/55">R$ 297,00</span> por apenas{" "}
+          <span className="font-bold text-white text-sm sm:text-base">R$ 197,00</span>
         </span>
-      </p>
+        <span className="hidden sm:inline text-[#e5c365]/50">•</span>
+        <span className="font-bold tabular-nums bg-[#e5c365] px-2.5 py-0.5 rounded-full text-[#12110f] text-xs sm:text-sm">
+          {String(timeLeft.hours).padStart(2, "0")}:{String(timeLeft.minutes).padStart(2, "0")}:
+          {String(timeLeft.seconds).padStart(2, "0")}
+        </span>
+      </a>
     </div>
   )
 }

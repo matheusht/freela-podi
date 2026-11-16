@@ -1,90 +1,100 @@
 import { Button } from "@/components/ui/button"
+import { CHECKOUT_URL } from "@/lib/constants"
 
 const includedItems = [
-  { name: "Aulas gravadas para assistir a qualquer hora com acesso VITALÍCIO", originalPrice: "R$ 497" },
-  { name: "Mentorias AO VIVO toda semana para trazer atualizações e tirar dúvidas", originalPrice: "R$ 997" },
-  { name: "Acesso ao GRUPO VIP com dicas extras", originalPrice: "R$ 297" },
-  { name: "Acesso ao WhatsApp pessoal da mentora para tirar dúvidas à qualquer momento", originalPrice: "R$ 197" }
+  "Acesso aos 7 módulos do PoDI +",
+  "Aulas práticas e objetivas",
+  "Suporte pelo WhatsApp",
+  "12 meses de acesso ao treinamento",
+  "Plano de ação para começar",
 ]
 
 export function PricingSection() {
   return (
-    <section className="bg-[#6d3a0f] bg-gradient-to-br from-[#8a715b] via-[#6d3a0f] to-[#79450b] py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
-      {/* Decorative gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#5a3208]/30 via-transparent to-[#8a715b]/20 pointer-events-none" />
+    <section
+      id="oferta"
+      className="bg-[#12110f] bg-gradient-to-br from-[#1f1b14] via-[#12110f] to-[#0a0908] py-14 sm:py-18 md:py-22 lg:py-24 relative overflow-hidden"
+    >
       <div className="relative z-10">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
-            {/* Left Content */}
-            <div className="text-[#fceede]">
-              {/* NOVO TÍTULO: ESCASSEZ E CONTRATE DE PREÇO */}
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-balance text-white drop-shadow-lg">
-                Por apenas 12x R$30,72. POR TEMPO LIMITADO.
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-6xl mx-auto">
+            {/* Left Content: O que você recebe? */}
+            <div className="text-[#f8f5ee]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 sm:mb-8 text-balance text-white">
+                Sua oportunidade de começar é agora!
               </h2>
 
               <div className="mb-6 sm:mb-8">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 text-white drop-shadow-md">e TEM MAIS… entrando HOJE você ainda irá receber:</h3>
-                <div className="space-y-2 sm:space-y-3">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-5 text-[#e5c365]">
+                  O que você recebe?
+                </h3>
+                <ul className="space-y-3 sm:space-y-3.5">
                   {includedItems.map((item, index) => (
-                    <div key={index} className="flex justify-between items-start gap-3 sm:gap-4">
-                      <div className="flex items-start gap-2 sm:gap-3 flex-1">
-                        <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 text-[#d0c1b1] flex-shrink-0 mt-0.5"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <span className="text-sm sm:text-base leading-relaxed text-white/95 drop-shadow-sm">{item.name}</span>
-                      </div>
-                      <span className="text-white/75 line-through whitespace-nowrap text-sm sm:text-base flex-shrink-0 drop-shadow-sm">{item.originalPrice}</span>
-                    </div>
+                    <li key={index} className="flex items-start gap-3">
+                      <svg
+                        className="w-5 h-5 sm:w-6 sm:h-6 text-[#e5c365] flex-shrink-0 mt-0.5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-base sm:text-lg leading-relaxed text-white/95">
+                        {item}
+                      </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
 
-              <div className="border-t border-white/20 pt-3 sm:pt-4 mb-3 sm:mb-4">
-                <div className="flex justify-center items-center text-base sm:text-lg md:text-xl font-semibold gap-2">
-                  <span className="text-white whitespace-nowrap drop-shadow-md">De <span className="line-through">1.997,00</span> <b>por</b> R$ 297</span>
-                </div>
+              <div className="border-t border-white/15 pt-5 sm:pt-6 space-y-2">
+                <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+                  Aprenda no seu ritmo, de onde estiver, e descubra novas possibilidades de trabalhar pela internet.
+                </p>
+                <p className="text-sm sm:text-base font-semibold text-[#e5c365] pt-1">
+                  PoDI + — Mais moderno. Mais direto. Mais prática. Mais possibilidades.
+                </p>
               </div>
-
             </div>
 
             {/* Right Pricing Card */}
             <div className="flex justify-center lg:justify-end">
-              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl max-w-sm w-full">
-                <div className="flex items-center justify-between mb-4 sm:mb-6 gap-2">
-                  <span className="bg-[#fceede] text-[#79450b] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
-                    Plano Vitalício
+              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-9 shadow-[0_24px_60px_rgba(0,0,0,0.45)] max-w-md w-full text-[#12110f]">
+                <div className="flex items-center justify-between mb-6 gap-2">
+                  <span className="bg-[#f8f5ee] text-[#9a721c] px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+                    Oferta Especial de Lançamento
                   </span>
-                  <div className="text-[#79450b] font-bold text-base sm:text-lg">PoDI</div>
+                  <div className="text-[#12110f] font-bold text-base sm:text-lg">PoDI +</div>
                 </div>
 
-                <div className="text-center mb-4 sm:mb-6">
-                  <div className="flex items-baseline justify-center gap-1 mb-2">
-                    <span className="text-xs sm:text-sm text-[#8c745c]">12x de</span>
-                    <span className="text-4xl sm:text-5xl font-bold text-[#79450b]">R$30</span>
-                    <span className="text-base sm:text-lg text-[#8c745c]">,72</span>
+                <div className="text-center mb-6 sm:mb-7">
+                  <p className="text-sm sm:text-base text-[#5c564b] mb-2">
+                    De <span className="line-through">R$ 297,00</span> por apenas
+                  </p>
+                  <div className="flex items-baseline justify-center gap-1.5 mb-1">
+                    <span className="text-4xl sm:text-5xl font-bold tracking-tight text-[#12110f]">
+                      R$ 197,00
+                    </span>
                   </div>
-                  <p className="text-[#8c745c] mb-3 sm:mb-4 text-sm sm:text-base">ou R$297,00 à vista</p>
-                  <p className="text-xs sm:text-sm text-[#8c745c]">
-                    Menos de R$ 1 por dia para<br />
-                    acessar toda a plataforma
+                  <p className="text-[#5c564b] text-sm sm:text-base font-medium mb-3">
+                    à vista ou em até 12x
+                  </p>
+                  <p className="text-xs sm:text-sm font-semibold text-[#9a721c]">
+                    R$ 100 de desconto no lançamento!
                   </p>
                 </div>
 
                 <Button
                   size="lg"
-                  className="w-full text-base sm:text-lg py-5 sm:py-6 bg-[#79450b] hover:bg-[#8c745c] text-[#fceede] font-semibold rounded-full"
+                  className="w-full text-sm sm:text-base py-6 bg-[#12110f] text-[#e5c365] font-bold rounded-full active:scale-[0.97] [@media(hover:hover)_and_(pointer:fine)]:hover:bg-[#23201b] [@media(hover:hover)_and_(pointer:fine)]:hover:scale-[1.01] transition-[transform,background-color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)]"
                   asChild
                 >
-                  <a href="https://chat.whatsapp.com/JHCCAVMthOtEjqB7RjrstS" target="_blank" rel="noopener noreferrer">
-                    GARANTIR MEU ACESSO
+                  <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                    QUERO GARANTIR MEU ACESSO POR R$ 197
                   </a>
                 </Button>
               </div>

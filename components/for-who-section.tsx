@@ -22,7 +22,6 @@ export function ForWhoSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <div className="w-16 h-1 bg-purple-primary mx-auto mb-6"></div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
               Transformação simplificada em 3 passos
             </h2>
