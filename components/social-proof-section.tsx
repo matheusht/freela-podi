@@ -5,32 +5,28 @@ import { useEffect, useState } from "react"
 
 const testimonials = [
   {
-    image: "/test.jpeg",
+    image: "/testimonials/15.jpg",
+    alt: "Depoimento de aluna - R$ 1.206,51 de comissões no fechamento do mês",
+  },
+  {
+    image: "/testimonials/16.jpg",
+    alt: "Depoimento de aluna - Primeiro mês com Shein: R$ 904,46 disponível e R$ 1.646,57 pendente",
+  },
+  {
+    image: "/testimonials/13.jpeg",
+    alt: "Depoimento de aluna - Mais de R$ 150 em um único dia",
+  },
+  {
+    image: "/testimonials/14.jpeg",
+    alt: "Depoimento de aluna - R$ 154,60 de comissão em um único dia",
+  },
+  {
+    image: "/testimonials/1.jpeg",
     alt: "Depoimento de aluna sobre o curso PoDI",
   },
   {
-    image: "/test1.jpeg",
+    image: "/testimonials/10.jpeg",
     alt: "Feedback positivo sobre a metodologia",
-  },
-  {
-    image: "/test3.jpeg",
-    alt: "Resultado alcançado com o PoDI",
-  },
-  {
-    image: "/test4.jpeg",
-    alt: "Experiência de sucesso com o curso",
-  },
-  {
-    image: "/test6.jpeg",
-    alt: "Depoimento de mudança de vida",
-  },
-  {
-    image: "/test7.jpeg",
-    alt: "Conquista financeira com o PoDI",
-  },
-  {
-    image: "/test8.jpeg",
-    alt: "Transformação através do método",
   },
 ]
 

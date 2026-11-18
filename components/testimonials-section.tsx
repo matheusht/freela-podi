@@ -4,6 +4,14 @@ import Image from "next/image"
 
 const testimonials = [
   {
+    image: "/testimonials/15.jpg",
+    alt: "Depoimento de aluna - R$ 1.206,51 de comissões no fechamento do mês",
+  },
+  {
+    image: "/testimonials/16.jpg",
+    alt: "Depoimento de aluna - Primeiro mês com Shein: R$ 904,46 disponível e R$ 1.646,57 pendente",
+  },
+  {
     image: "/testimonials/1.jpeg",
     alt: "Depoimento Instagram - Rafaela Lopes",
   },
@@ -12,36 +20,20 @@ const testimonials = [
     alt: "Depoimento Instagram - Pensei Arranjas",
   },
   {
-    image: "/testimonials/3.jpeg",
-    alt: "Depoimento WhatsApp - Paula Braccesi",
-  },
-  {
     image: "/testimonials/4.png",
     alt: "Depoimento Instagram - Taiana Disaro",
   },
   {
-    image: "/testimonials/6.png",
-    alt: "Depoimento Instagram - Andreza Farias",
-  },
-  {
-    image: "/testimonials/9.png",
-    alt: "Depoimento Instagram - Rosangela Hayden",
-  },
-  {
     image: "/testimonials/13.jpeg",
-    alt: "Depoimento Instagram - Canteguerra",
+    alt: "Depoimento de aluna - Mais de R$ 150 em um único dia",
   },
   {
     image: "/testimonials/10.jpeg",
-    alt: "Depoimento Instagram - Canteguerra",
+    alt: "Depoimento de aluna sobre a didática do PoDI",
   },
   {
     image: "/testimonials/14.jpeg",
-    alt: "Depoimento Instagram - Canteguerra",
-  },
-  {
-    image: "/testimonials/8.png",
-    alt: "Depoimento Instagram - Canteguerra",
+    alt: "Depoimento de aluna - R$ 154,60 de comissão em um único dia",
   },
 ]
 
